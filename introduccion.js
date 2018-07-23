@@ -1,0 +1,1 @@
+alert('Soy javascript desde un archivo externo')
