@@ -1,1 +1,1 @@
-alert('Soy javascript desde un archivo externo')
+alert('Hola mundo, soy javascript desde un archivo externo');
