@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>HTML5 Contact Form</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="hojaEstilo.css" />
+
+
+
+</head>
+
+<body>
+    <form class="contact_form" action="#" method="post">
+        <ul>
+            <li>
+                <h2>Reservas de Hotel</h2>
+            </li>
+            <li>
+                <label for="name">Nombre y Apellidos:</label>
+                <input type="text" placeholder="Neoteo" />
+                <span id="errorNomApe"></span>
+            </li>
+            <li>
+                <label for="genero">Género:</label>
+                <input type="radio" name="genero" id="generoM" value=M>Masculino
+                <input type="radio" name="genero" id="generoF" value=F>Femenino
+                <span id="errorGenero"></span>
+            </li>
+            <li>
+                <label for="email">Correo electrónico:</label>
+                <input type="text" id="email" placeholder="Ejemplo:neoteo@neoteo.com" />
+                <span id="errorEmail"></span>
+            </li>
+            <li>
+                <label for="telefono">Teléfono:</label>
+                <input type="text" id="tlfno" maxlength="12" placeholder="Ejemplo:999 99 99 99" />
+                <span id="errorTelefono"></span>
+            </li>
+            <li>
+                <label for="provincia">Provincia:</label>
+                <select id="provincia">
+                    <option>Seleccionar ...</option>
+                    <option>Almeria</option>
+                    <option>Cádiz</option>
+                    <option>Córdoba</option>
+                    <option>Granada</option>
+                    <option>Huelva</option>
+                    <option>Jaén</option>
+                    <option>Málaga</option>
+                    <option>Sevilla</option>
+                </select><span id="errorProvincia"></span>
+            </li>
+            <li>
+                <label for="fechaReserva">Fecha reserva:</label>
+                <input type="text" size=20 id="fechaReserva" placeholder="Ejemplo:dd/mm/yyyy" />
+                <span id="errorfechaReserva"></span>
+            </li>
+            <li>
+                <label for="fechaReserva">Fecha salida:</label>
+                <input type="text" size=20 id="fechaSalida" placeholder="Ejemplo:dd/mm/yyyy" />
+                <span id="errorfechaSalida"></span>
+            </li>
+            <li>
+                <label for="Comentarios">Comentarios:</label>
+                <textarea id="comentarios" rows="5" cols="40"></textarea>
+            </li>
+            <li>
+                <div class="g-recaptcha" data-sitekey="6Lew-40UAAAAAMmEp5C1AgO_DmQxQ7da8tW5p_BG"></div>
+                <div>
+                    <span class="error" id="errorCaptcha"></span>
+                </div>
+            </li>
+            <li>
+                <button class="submit" type="submit">Enviar</button>
+                <button class="submit" type="reset">Cancelar</button>
+            </li>
+
+        </ul>
+
+    </form>
+    <div id="intentos">
+
+    </div>
+    <script src='https://www.google.com/recaptcha/api.js?hl=es'></script>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>
